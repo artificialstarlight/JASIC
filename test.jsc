@@ -1,0 +1,6 @@
+public class Hewwo BEGIN
+	public static void main(String[] args) BEGIN
+		PRINT("Hewwo!");
+		PRINT("Nya!");
+END
+END

@@ -1,0 +1,8 @@
+public class Hewwo BEGIN
+	public static void main(String[] args) BEGIN
+		PRINT("Hewwo!");
+		FOR(I,0,10,1)BEGIN
+		PRINT("Nya!");
+		END
+END
+END

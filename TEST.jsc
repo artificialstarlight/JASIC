@@ -1,0 +1,25 @@
+REM 
+---COMMENT----
+    Classes are public unless specified otherwise
+    and begins and ends must be on the same line as the 
+    statement.
+STOP
+
+CLASS Test BEGIN
+	MAIN METHOD BEGIN 
+	REM You can use the above shortcut instead of public static void main. STOP
+		PRINT("Hello World! Imma count to 10!")
+		FOR(I,0,10,1)BEGIN
+		PRINT("Count is" + STR(I))
+		REM The above is shortcut for String.valueOf(x) STOP
+		divisibleBy2(I)
+		END
+	PUBLIC VOID divisibleBy2(INT X) BEGIN
+	REM This is a method STOP
+		IF(X % 2) == 0 THEN
+			PRINT("It's divisible by 2!")
+		END
+		
+
+END
+END

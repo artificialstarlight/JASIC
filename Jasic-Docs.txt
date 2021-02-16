@@ -1,0 +1,74 @@
+----- JASIC 1.0 DOCS -----
+
+
+Welcome to JASIC, the cringe child of Java and BASIC!
+
+JASIC is basically Java but with BASIC-like syntax.
+
+It is "transpiled" to Java using a find-and-replace Python
+program, because i don't know how to write a proper lexer and
+parser yet.
+
+--Syntax Changes--
+
+Curly brackets "{,}" are replaced with the keywords "BEGIN" 
+and "END". 
+
+"System.out.print(ln)" is now simply PRINT or PRINTLN.
+
+A shortcut for "public static void main(String[]args)", one
+can use "MAIN METHOD" instead.
+
+Classes are public by default. Simply type "CLASS" to make a 
+class. Classees can also be private or protected, but you
+must specify.
+
+If statements work like this:
+
+	IF (condition) THEN
+		[code here]
+	END
+	ELSE BEGIN
+		[code here]
+	END
+
+Notice how the bracket is replaced with a "THEN".
+
+"Boolean" is shortened to "BOOL".
+
+For loops work like this:
+
+	FOR(variable,start,end,step) BEGIN
+		[code here]
+	END
+
+Comments are always multi line comments, they are done like
+this:
+
+REM this is a comment STOP
+
+or 
+
+REM
+this
+is 
+a 
+comment
+STOP
+
+All other Java keywords are the same, just capitalized.
+
+Semicolons must be added at the end of a statement the same as
+it is in Java. This will be fixed later.
+
+-----Known Issues----
+
+Can't use keywords in strings or comments else they will be
+replaced. This will be fixed later.
+
+For example, don't go 
+	PRINT("I am PRINT-ing!");
+Instead for now, try 
+	PRINT("I am print-ing"!);
+JASIC keywords are case-sensitive.
+
